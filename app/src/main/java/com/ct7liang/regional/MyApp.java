@@ -14,8 +14,15 @@ public class MyApp extends Application {
     public void onCreate() {
         super.onCreate();
 
-        Regional.init(this, "com.ct7liang.regional");
-        Regional.initTag("address");
+        Regional.init(this,
+                "com.ct7liang.regional",
+                "#7FB446",
+                null,
+                null,
+                null,
+                "#dfdfdf",
+                "address");
+
     }
 
 }

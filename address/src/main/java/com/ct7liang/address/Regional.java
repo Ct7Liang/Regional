@@ -19,17 +19,29 @@ public class Regional {
     public static String TAG = "Regional";
     public static String SelectColor = "#FF4081";
     public static String NormalColor = "#3F51B5";
+    public static String TitleColor = "#444444";
+    public static String TitleBackColor = "#FFFFFF";
+    public static String BackColor = "#FFFFFF";
 
-    private static void setColor(String selectColor, String normalColor){
+//    private static void setColor(String selectColor, String normalColor, String titleColor, String backColor){
+//        SelectColor = selectColor==null?"#FF4081":selectColor;
+//        NormalColor = normalColor==null?"#3F51B5":normalColor;
+//        TitleColor = titleColor==null?"#444444":titleColor;
+//        BackColor = backColor==null?"#FFFFFF":backColor;
+//    }
+
+//    public static void initTag(String tag){
+//        TAG = tag;
+//    }
+
+    public static void init(Context context, String packageName, String selectColor, String normalColor, String titleColor, String titleBackColor, String backColor, String tag){
+
         SelectColor = selectColor==null?"#FF4081":selectColor;
         NormalColor = normalColor==null?"#3F51B5":normalColor;
-    }
-
-    public static void initTag(String tag){
+        TitleColor = titleColor==null?"#444444":titleColor;
+        BackColor = backColor==null?"#FFFFFF":backColor;
+        TitleBackColor = titleBackColor==null?"#FFFFFF":titleBackColor;
         TAG = tag;
-    }
-
-    public static void init(Context context, String packageName){
 
         String DB_PATH = "/data/data/" + packageName + "/databases";
 

@@ -56,11 +56,16 @@ public class AddressUtils {
 
             final TextView pTv = (TextView) view.findViewById(R.id.p);
             final TextView cTv = (TextView) view.findViewById(R.id.c);
+            cTv.setTextColor(Color.parseColor(Regional.TitleColor));
             final TextView dTv = (TextView) view.findViewById(R.id.d);
 
             final ListView province = (ListView) view.findViewById(R.id.province);
+            province.setBackgroundColor(Color.parseColor(Regional.BackColor));
             final ListView city = (ListView) view.findViewById(R.id.city);
+            city.setBackgroundColor(Color.parseColor(Regional.BackColor));
             final ListView county = (ListView) view.findViewById(R.id.distract);
+            county.setBackgroundColor(Color.parseColor(Regional.BackColor));
+
             provinces = AddressDao.getDao(act).queryProvince();
             pAdapter = new AddressAdapter(provinces);
             province.setAdapter(pAdapter);
@@ -79,9 +84,11 @@ public class AddressUtils {
                     p = new StringBuffer();
                     p.append(provinces.get(position).getName());
 
-                    pTv.setText(p.toString());
-                    cTv.setText("");
-                    dTv.setText("");
+//                    pTv.setText(p.toString());
+//                    cTv.setText("");
+//                    dTv.setText("");
+
+                    cTv.setText(p.toString());
                 }
             });
             city.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -125,9 +132,10 @@ public class AddressUtils {
                         d.append(counties.get(position).getName());
                     }
 
-                    pTv.setText("");
-                    cTv.setText("");
-                    dTv.setText(p.toString()+c.toString()+d.toString());
+//                    pTv.setText("");
+//                    cTv.setText("");
+//                    dTv.setText(p.toString()+c.toString()+d.toString());
+                    cTv.setText(p.toString()+c.toString()+d.toString());
 
                     if (listener != null){
                         listener.onSelected(counties.get(position).getCode(), p.toString()+c.toString()+d.toString());
