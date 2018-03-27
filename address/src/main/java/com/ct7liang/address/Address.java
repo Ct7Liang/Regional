@@ -1,4 +1,4 @@
-package com.ct7liang.regional;
+package com.ct7liang.address;
 
 public class Address {
 

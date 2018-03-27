@@ -1,4 +1,4 @@
-package com.ct7liang.regional;
+package com.ct7liang.address;
 
 import android.content.Context;
 import android.util.Log;

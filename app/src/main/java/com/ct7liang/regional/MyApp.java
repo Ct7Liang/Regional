@@ -2,6 +2,8 @@ package com.ct7liang.regional;
 
 import android.app.Application;
 
+import com.ct7liang.address.Regional;
+
 /**
  * Created by Administrator on 2018-03-27.
  *

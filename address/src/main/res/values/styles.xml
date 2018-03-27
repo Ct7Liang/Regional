@@ -1,0 +1,9 @@
+<resources>
+
+
+    <style name="designer_location_select_popup_window_anim" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/designer_location_select_popup_window_enter</item>
+        <item name="android:windowExitAnimation">@anim/designer_location_select_popup_window_exit</item>
+    </style>
+
+</resources>

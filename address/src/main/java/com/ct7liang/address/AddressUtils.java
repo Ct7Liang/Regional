@@ -1,4 +1,4 @@
-package com.ct7liang.regional;
+package com.ct7liang.address;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
