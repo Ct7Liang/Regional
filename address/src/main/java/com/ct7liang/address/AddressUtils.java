@@ -57,6 +57,7 @@ public class AddressUtils {
             final TextView pTv = (TextView) view.findViewById(R.id.p);
             final TextView cTv = (TextView) view.findViewById(R.id.c);
             cTv.setTextColor(Color.parseColor(Regional.TitleColor));
+            cTv.setBackgroundColor(Color.parseColor(Regional.TitleBackColor));
             final TextView dTv = (TextView) view.findViewById(R.id.d);
 
             final ListView province = (ListView) view.findViewById(R.id.province);
