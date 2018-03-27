@@ -41,7 +41,7 @@ public class Regional {
         TitleColor = titleColor==null?"#444444":titleColor;
         BackColor = backColor==null?"#FFFFFF":backColor;
         TitleBackColor = titleBackColor==null?"#FFFFFF":titleBackColor;
-        TAG = tag;
+        TAG = tag==null?"Regional":tag;
 
         String DB_PATH = "/data/data/" + packageName + "/databases";
 
